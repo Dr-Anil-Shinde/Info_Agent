@@ -1,13 +1,3 @@
-# pip install pandas
-# pip install langchain
-# pip install python-docx
-# pip install llama-index
-# pip install torch
-# pip install pinecone-client
-# pip install nest_asyncio
-# pip install transformers
-# pip install huggingface_hub
-
 import os
 import pandas as pd
 from langchain_community.llms import Ollama
@@ -32,9 +22,9 @@ from llama_index.core.prompts import PromptTemplate
 from llama_index.llms.huggingface import HuggingFaceLLM
 
 from huggingface_hub import login
-login(token="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")
+login(token="")
 from huggingface_hub import login
-os.environ['PINECONE_API_KEY'] = "660638e0-ad6f-4e29-a5a2-b30c7f43cd10"
+os.environ['PINECONE_API_KEY'] = ""
 os.environ['PINECONE_ENVIRONMENT'] = 'us-east-1'
 pc = Pinecone(api_key=os.environ.get("PINECONE_API_KEY"))
 gcc_index = pc.Index("customersupport")
